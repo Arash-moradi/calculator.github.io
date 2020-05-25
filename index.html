@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ماشین حساب</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form name="calculator" class="calculator">
+            <div class="inputText">
+                <input type="text" name="input" class="textmain">
+            </div>
+            <div class="btn">
+                <div class="btn-item">
+                    <input type="button" value="1" onclick="calculator.input.value+='1'">
+                    <input type="button" value="2" onclick="calculator.input.value+='2'">
+                    <input type="button" value="3" onclick="calculator.input.value+='3'">
+                    <input type="button" class="btn-hover" value="+" onclick="calculator.input.value+='+'">
+                </div>
+                <div class="btn-item">
+                    <input type="button" value="4" onclick="calculator.input.value+='4'">
+                    <input type="button" value="5" onclick="calculator.input.value+='5'">
+                    <input type="button" value="6" onclick="calculator.input.value+='6'">
+                    <input type="button" class="btn-hover" value="-" onclick="calculator.input.value+='-'">
+                </div>
+                <div class="btn-item">
+                    <input type="button" value="7" onclick="calculator.input.value+='7'">
+                    <input type="button" value="8" onclick="calculator.input.value+='8'">
+                    <input type="button" value="9" onclick="calculator.input.value+='9'">
+                    <input type="button" class="btn-hover" value="*" onclick="calculator.input.value+='*'">
+                </div>
+                <div class="btn-item">
+                    <input type="button" class="btn-hover" value="c" onclick="calculator.input.value =''">
+                    <input type="button" value="0" onclick="calculator.input.value+='0'">
+                    <input type="button" class="btn-hover" value="=" onclick="calculator.input.value =eval(calculator.input.value)">
+                    <input type="button" class="btn-hover" value="/" onclick="calculator.input.value+='/'">
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
